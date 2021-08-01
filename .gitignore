@@ -1,7 +1,18 @@
-/xpower-main/target/
-/xpower-http/target/
-/utils/target/
-/search/target/
-/mq/target/
-/filemanipulate/target/
-/knife/target/maven-status/maven-compiler-plugin/compile/default-compile/
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
