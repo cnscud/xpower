@@ -14,7 +14,7 @@
     </appender>
 
 
-    <category name="com.panda">
+    <category name="com.cnscud">
         <priority value="DEBUG" />
     </category>
 

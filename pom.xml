@@ -515,11 +515,7 @@
                 <artifactId>commons-fileupload</artifactId>
                 <version>1.2.2</version>
             </dependency>
-            <dependency>
-                <groupId>com.panda</groupId>
-                <artifactId>filemanipulate</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
+
             <dependency>
                 <groupId>com.sohu.sendcloud</groupId>
                 <artifactId>sendcloud-sdk</artifactId>

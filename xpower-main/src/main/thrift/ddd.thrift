@@ -5,7 +5,7 @@
 * Version: 1.0
 * ================================================ */
 
-namespace java com.panda.xpower.ddd.schema
+namespace java com.cnscud.xpower.ddd.schema
 
 enum Type {
     CLUSTER = 1,

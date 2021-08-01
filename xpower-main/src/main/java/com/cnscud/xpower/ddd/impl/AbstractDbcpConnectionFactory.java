@@ -1,5 +1,5 @@
 /*
-package com.panda.xpower.ddd.impl;
+package com.cnscud.xpower.ddd.impl;
 
 import java.util.Map;
 

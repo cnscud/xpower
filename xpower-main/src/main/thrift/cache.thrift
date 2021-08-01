@@ -5,7 +5,7 @@
 * Version: 1.0
 * ================================================ */
 
-namespace java com.panda.xpower.cache.schema
+namespace java com.cnscud.xpower.cache.schema
 
 enum CacheType {
     REDIS = 1,

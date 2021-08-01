@@ -513,6 +513,6 @@ class Dao implements IDao {
         if (getSequence() != null) {
             return getSequence().getNextSequence(sequenceName);
         }
-        throw new UnsupportedOperationException("setting an implementation of interface('com.panda.xpower.dao.ISequence') in system config");
+        throw new UnsupportedOperationException("setting an implementation of interface('com.cnscud.xpower.dao.ISequence') in system config");
     }
 }
