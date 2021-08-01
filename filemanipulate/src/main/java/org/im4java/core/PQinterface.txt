@@ -1,0 +1,23 @@
+# Interface defintion for pngquant
+#
+# Syntax: option varType:varName operator [...]
+#
+#         Operator: _     space
+#                   @     attach without space
+#                   else  given character
+#
+# $Author: Felix $
+# $Revision: 1.1 $
+#
+!validInterface=true
+!toolName=pngquant
+#
+--force
+--nofs
+--verbose
+--skip-if-larger
+--output String:pFilename
+--speed Integer:pSpeed
+--quality Integer:pMin - Integer:pMax
+--ext String:pSuffix
+--posterize Integer:pPrecision
