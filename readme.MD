@@ -1,6 +1,5 @@
 XPower 工具包
 
-## 
 
 ## 注意
     目前仅供内部使用, 缺少文档.
@@ -10,7 +9,7 @@ XPower 工具包
 ## 包含的功能
     基于Zookeeper的配置中心
     缓存Redis操作封装
-    MQ操作封装
+    MQ操作封装: Kafka, Jafka
     ES操作封装
     图像处理. 上传封装
     Http操作封装
@@ -19,7 +18,7 @@ XPower 工具包
 
 
 
-## 此项目作者: (历史悠久, 防止备忘)
+## 此项目作者: (历史悠久...)
     Ady Liu
     Dea Peng
     Felix Zhang
@@ -28,12 +27,12 @@ XPower 工具包
 
 
 ## Todo
-* Kafka 支持
-* MyBatis封装
-* 发布的版本号问题?
-* 方便别人import
-* 补齐文档和例子
-* 发布到中心库?
+  * Kafka 支持
+  * MyBatis封装
+  * 发布的版本号问题?
+  * 方便别人import
+  * 补齐文档和例子
+  * 发布到中心库?
 
 
 
