@@ -341,7 +341,11 @@ public class FtpDeployFileWorker implements DeployFileWorker, IZkDataListener {
         if (storeSetting == null) {
             rebuildSetting(false);
         }
-        if(storeSetting == null)throw new IllegalArgumentException("no ftp server config");
+
+        if(storeSetting == null) {
+            throw new IllegalArgumentException("no ftp server config");
+        }
+
         return storeSetting;
     }
 
