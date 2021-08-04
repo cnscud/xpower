@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>filemanipulate</artifactId>
+  <artifactId>xpower-filemanipulate</artifactId>
 
   <dependencies>
 
@@ -74,9 +74,6 @@
       <artifactId>jackson-mapper-asl</artifactId>
     </dependency>
 
-    <!-- <dependency> <groupId>org.springframework.integration</groupId> <artifactId>spring-integration-core</artifactId> 
-      <version>2.1.4.RELEASE</version> </dependency> <dependency> <groupId>org.springframework.integration</groupId> <artifactId>spring-integration-ftp</artifactId> 
-      <version>2.1.4.RELEASE</version> </dependency> -->
   </dependencies>
 
 </project>

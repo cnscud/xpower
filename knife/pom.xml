@@ -6,7 +6,7 @@
         <artifactId>xpower-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>knife</artifactId>
+    <artifactId>xpower-knife</artifactId>
     <description>SMALL ORM</description>
 
     <dependencies>
