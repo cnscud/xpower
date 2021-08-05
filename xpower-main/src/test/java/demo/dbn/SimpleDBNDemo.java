@@ -19,7 +19,7 @@ public class SimpleDBNDemo {
 
     public static void main(String[] args) throws Exception {
         final String bizName = "dbn.test";
-        Connection conn = SimpleDBNDataSourceFactory.getInstance().getConnection(bizName);
+        Connection conn = SimpleDBNDataSourceFactory.getInstance().getDataSource(bizName).getConnection();
         conn.setAutoCommit(true);
         //
         PreparedStatement ps = conn.prepareStatement("create table IF NOT EXISTS demo(id INT,name varchar(32),age int)");

@@ -24,7 +24,7 @@ public class SimpleDBNDataSourceFactory {
 
 
     public DataSource getDataSource(String name) throws SQLException {
-        return connectionPool.getDataSource(name);
+        return new DynamicByZookeeperDataSourceWrapper(connectionPool, name);
     }
 
 
