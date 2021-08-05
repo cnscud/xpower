@@ -1,14 +1,9 @@
 package com.cnscud.xpower.dbn;
 
-import com.cnscud.xpower.Charsets;
 import com.cnscud.xpower.configcenter.ConfigCenter;
-import com.cnscud.xpower.ddd.schema.Instance;
 import com.cnscud.xpower.utils.Jsons;
 import com.github.zkclient.IZkDataListener;
 import org.apache.commons.lang.StringUtils;
-import org.apache.thrift.TDeserializer;
-import org.apache.thrift.TSerializer;
-import org.apache.thrift.protocol.TJSONProtocol;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,11 +13,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-import static com.cnscud.xpower.ddd.schema.SchemaInstanceHelper.unserialize;
-
 /**
- * @author adyliu (imxylz@gmail.com)
- * @since 2011-6-13
+ * 从Zookeeper的 /xpower/dbn节点下读取数据库配置.
+ * 内容支持两种格式: json或者properties格式
+ *
+ * @author Felix Zhang
+ * @since 2021-8-5
  */
 public class SchemeNodeHelper {
 

@@ -8,11 +8,14 @@ import java.util.Map;
 
 /**
  * Hikari DataSource.
+ * 后续: 可以根据参数来使用不同的DataSource, 例如Druid.
+ *
+ * @fixme: 优化参数
  *
  * @author Felix Zhang 2021-08-05 11:14
  * @version 1.0.0
  */
-public class HikariDataSourceFactory {
+public class SimpleDataSourceBuilder {
 
 
     public HikariDataSource buildDataSource(Map<String, String> args) {

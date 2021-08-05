@@ -73,7 +73,7 @@ public class SimpleDBNConnectionPool {
 
 
     private DataSource createInstance(Map<String, String> dbcfg) {
-        return new HikariDataSourceFactory().buildDataSource(dbcfg);
+        return new SimpleDataSourceBuilder().buildDataSource(dbcfg);
     }
 
 

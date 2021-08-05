@@ -11,9 +11,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 /**
+ * 测试.
+ * 请先在zookeeper里面设置/xpower/dbn/dbn.test节点, 内容参考dbn.test.json.
  *
- * @author adyliu(imxylz @ gmail.com)
- * @since 2012-11-12
  */
 public class SimpleDBNDemo {
 
