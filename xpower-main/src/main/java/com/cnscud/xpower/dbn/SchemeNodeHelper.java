@@ -15,7 +15,21 @@ import java.util.Properties;
 
 /**
  * 从Zookeeper的 /xpower/dbn节点下读取数据库配置.
- * 内容支持两种格式: json或者properties格式
+ * 内容支持两种格式: json或者properties格式.
+ *
+ * JSON格式如下:
+ * {
+ *   "jdbc-url": "jdbc:mysql://127.0.0.1:3306/cavedemo?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC",
+ *   "username": "dbuser",
+ *   "password": "yourpassword",
+ *   "driver-class-name": "com.mysql.cj.jdbc.Driver"
+ * }
+ *
+ * Properties格式如下:
+ *  jdbc-url: jdbc:mysql://127.0.0.1:3306/cavedemo?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+ *  username: dbuser
+ *  password: password
+ *  driver-class-name: com.mysql.cj.jdbc.Driver
  *
  * @author Felix Zhang
  * @since 2021-8-5

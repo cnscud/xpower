@@ -18,6 +18,8 @@ import static java.lang.String.format;
 /**
  * The simple datasource pool.
  *
+ * 根据名字存放多个数据库的DataSource, 并且会监听Zookeeper配置, 动态重建.
+ *
  * @author adyliu (imxylz@gmail.com)
  * @since 2011-7-27
  */

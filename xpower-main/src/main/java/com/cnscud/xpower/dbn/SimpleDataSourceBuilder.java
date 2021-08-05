@@ -8,7 +8,8 @@ import java.util.Map;
 
 /**
  * Hikari DataSource.
- * 后续: 可以根据参数来使用不同的DataSource, 例如Druid.
+ *
+ * 思考: 可以根据参数里面的类型来使用不同的库创建DataSource, 例如Druid. (默认为HikariDataSource)
  *
  * @fixme: 优化参数
  *
@@ -60,7 +61,7 @@ public class SimpleDataSourceBuilder {
     }
 
     private String getUrl(Map<String, String> args) {
-        return args.get("url");
+        return args.get("jdbc-url") == null ? args.get("url"): args.get("jdbc-url");
     }
 
 

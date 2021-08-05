@@ -5,7 +5,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 /**
- * 单例化, 方便调用.
+ * 单例化, 方便调用, getDataSource返回的是封装后的DataSource, 可以动态监听Zookeeper配置.
  *
  */
 public class SimpleDBNDataSourceFactory {

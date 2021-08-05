@@ -8,7 +8,7 @@ import java.sql.SQLFeatureNotSupportedException;
 import java.util.logging.Logger;
 
 /**
- * Datasource wrapper.
+ * Datasource wrapper, 为了方便动态创建DataSource.
  *
  * @author Felix Zhang 2021-08-05 14:14
  * @version 1.0.0
