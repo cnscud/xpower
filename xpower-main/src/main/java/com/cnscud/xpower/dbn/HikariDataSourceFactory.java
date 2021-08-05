@@ -2,6 +2,7 @@ package com.cnscud.xpower.dbn;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import org.apache.commons.lang.StringUtils;
 
 import java.util.Map;
 
@@ -20,10 +21,15 @@ public class HikariDataSourceFactory {
         config.setUsername(args.get("username"));
         config.setPassword(args.get("password"));
         config.setDriverClassName(getDriverClassName(args));
-        int max = Integer.parseInt(args.get("maximum-pool-size"));
+
+        String maximumPoolSizeKey = "maximum-pool-size";
+        int maximumPoolSize = 30;
+        if(StringUtils.isNotEmpty(args.get(maximumPoolSizeKey))){
+            maximumPoolSize = Integer.parseInt(args.get(maximumPoolSizeKey));
+        }
 
         config.addDataSourceProperty("cachePrepStmts", "true"); //是否自定义配置，为true时下面两个参数才生效
-        config.addDataSourceProperty("prepStmtCacheSize", max); //连接池大小默认25，官方推荐250-500
+        config.addDataSourceProperty("prepStmtCacheSize", maximumPoolSize); //连接池大小默认25，官方推荐250-500
         config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048"); //单条语句最大长度默认256，官方推荐2048
         config.addDataSourceProperty("useServerPrepStmts", "true"); //新版本MySQL支持服务器端准备，开启能够得到显著性能提升
         config.addDataSourceProperty("useLocalSessionState", "true");
@@ -34,7 +40,7 @@ public class HikariDataSourceFactory {
         config.addDataSourceProperty("elideSetAutoCommits", "true");
         config.addDataSourceProperty("maintainTimeStats", "false");
 
-        config.setMaximumPoolSize(max); //
+        config.setMaximumPoolSize(maximumPoolSize); //
         config.setMinimumIdle(10);//最小闲置连接数，默认为0
         config.setMaxLifetime(600000);//最大生存时间
         config.setConnectionTimeout(30000);//超时时间30秒

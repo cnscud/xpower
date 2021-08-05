@@ -21,7 +21,7 @@ import static java.lang.String.format;
  * @author adyliu (imxylz@gmail.com)
  * @since 2011-7-27
  */
-public class SimpleDistConnectionPool {
+public class SimpleDBNConnectionPool {
 
     final Logger logger = LoggerFactory.getLogger(getClass());
 

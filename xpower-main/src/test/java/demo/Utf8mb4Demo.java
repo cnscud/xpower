@@ -7,7 +7,6 @@ import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.ResultSetMetaData;
 
-import com.mysql.jdbc.MysqlIO;
 import com.cnscud.xpower.dao.DaoFactory;
 import com.cnscud.xpower.dao.DefaultOpList;
 import com.cnscud.xpower.dao.IDao;
@@ -37,14 +36,14 @@ public class Utf8mb4Demo {
         conn2 = getField(org.apache.commons.dbcp.DelegatingConnection.class,conn2, "_conn");
         System.out.println(conn2.getClass()+", "+conn2);
         
-        Object serverVariables = getField(com.mysql.jdbc.ConnectionImpl.class,conn2,"serverVariables");
-        System.out.println("serverVariables="+serverVariables);
-        
-        MysqlIO io = getField(com.mysql.jdbc.ConnectionImpl.class, conn2, "io");
-        System.out.println("io="+io);
-        
-        Object serverCharsetIndex = getField(MysqlIO.class, io, "serverCharsetIndex");
-        System.out.println("serverCharsetIndex="+serverCharsetIndex);
+//        Object serverVariables = getField(com.mysql.jdbc.ConnectionImpl.class,conn2,"serverVariables");
+//        System.out.println("serverVariables="+serverVariables);
+//
+//        MysqlIO io = getField(com.mysql.jdbc.ConnectionImpl.class, conn2, "io");
+//        System.out.println("io="+io);
+//
+//        Object serverCharsetIndex = getField(MysqlIO.class, io, "serverCharsetIndex");
+//        System.out.println("serverCharsetIndex="+serverCharsetIndex);
         System.out.println("---------------------------------------------------------");
         run1();
     }
