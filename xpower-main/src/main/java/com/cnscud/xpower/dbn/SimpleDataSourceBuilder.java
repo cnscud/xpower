@@ -46,11 +46,11 @@ public class SimpleDataSourceBuilder {
 
         config.setMaximumPoolSize(maximumPoolSize); //
         config.setMinimumIdle(10);//最小闲置连接数，默认为0
-        config.setMaxLifetime(600000);//最大生存时间
-        config.setConnectionTimeout(30000);//超时时间30秒
-        config.setIdleTimeout(60000);
+        config.setMaxLifetime(10 * 60 * 1000);//最大生存时间 10分钟
+        config.setConnectionTimeout(30 * 1000);//超时时间30秒
+        config.setIdleTimeout(60 * 1000);
 
-        config.setConnectionTestQuery("select 1");
+        config.setConnectionTestQuery("select 1"); //校验连接
         //logger.info("mysql hikari max {} getUrl {}",mathMax,getUrl(args));
 
         return new HikariDataSource(config);
