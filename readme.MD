@@ -11,10 +11,10 @@ XPower 工具包
     基于Zookeeper的配置中心
     缓存Redis操作封装
     MQ操作封装: Kafka, Jafka
-    ES操作封装
     图像处理. 上传封装
     Http操作封装
     JDBC DAO操作封装
+    Datasource封装, 用于动态读取数据库配置
     
 
 
@@ -30,11 +30,11 @@ XPower 工具包
 ## Todo
   * > Kafka 支持
   * > MyBatis动态配置封装
+  * > 发布到中心库
   * 
-  * 方便别人import
+  * 方便别人import? 需要吗
   * 发布的版本号问题?
   * 补齐文档和例子
-  * 发布到中心库?
 
 
 
