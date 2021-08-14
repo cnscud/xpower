@@ -4,7 +4,7 @@
 
     <groupId>com.cnscud.xpower</groupId>
     <artifactId>xpower-parent</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
 
@@ -35,7 +35,7 @@
         <connection>scm:git:git@github.com:cnscud/xpower.git</connection>
         <developerConnection>scm:git:git@github.com:cnscud/xpower.git</developerConnection>
         <url>https://github.com/cnscud/xpower</url>
-      <tag>xpower-parent-1.0.2</tag>
+      <tag>HEAD</tag>
   </scm>
     <developers>
         <developer>
