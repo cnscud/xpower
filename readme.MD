@@ -38,8 +38,15 @@ XPower 工具包
 
 
 
-# 如何使用
+## 如何使用
     默认 zookeeper: 127.0.0.1:2181, 通过环境变量ZK_HOSTS配置
     待补充文档
     待补充文档
     待补充文档
+
+
+## release
+    文档 https://central.sonatype.org/publish/publish-maven/
+    mvn release:clean release:prepare -DskipTests
+    mvn release:perform
+    
