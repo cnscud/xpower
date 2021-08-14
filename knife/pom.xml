@@ -3,7 +3,7 @@
     <parent>
         <groupId>com.cnscud.xpower</groupId>
         <artifactId>xpower-parent</artifactId>
-        <version>1.0.2-SNAPSHOT</version>
+        <version>1.0.2</version>
     </parent>
     <artifactId>xpower-knife</artifactId>
     <description>SMALL ORM</description>
@@ -12,7 +12,7 @@
         <dependency>
             <groupId>com.cnscud.xpower</groupId>
             <artifactId>xpower-main</artifactId>
-            <version>1.0.2-SNAPSHOT</version>
+            <version>1.0.2</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.redisson</groupId>

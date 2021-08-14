@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.cnscud.xpower</groupId>
     <artifactId>xpower-parent</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
   </parent>
   <artifactId>xpower-main</artifactId>
   <dependencies>
