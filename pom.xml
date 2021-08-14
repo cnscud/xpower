@@ -7,6 +7,11 @@
     <version>1.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+
+    <name>xpower</name>
+    <url>https://github.com/cnscud/xpower</url>
+    <description>A quickstart toolbox.</description>
+
     <modules>
         <module>xpower-main</module>
         <module>xpower-http</module>
