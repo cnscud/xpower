@@ -29,8 +29,8 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/cnscud/xpower.git</connection>
-        <developerConnection>scm:git:https://github.com/cnscud/xpower.git</developerConnection>
+        <connection>scm:git:git@github.com:cnscud/xpower.git</connection>
+        <developerConnection>scm:git:git@github.com:cnscud/xpower.git</developerConnection>
         <url>https://github.com/cnscud/xpower</url>
     </scm>
     <developers>
