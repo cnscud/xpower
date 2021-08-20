@@ -8,7 +8,7 @@ import java.util.Properties;
 
 /**
  * 系统配置(内部使用)
- * 
+ *
  * @author adyliu (adyliu@panda.net)
  * @since 2012-10-19
  */
@@ -44,12 +44,15 @@ public class SystemConfig {
 
     public String getString(String key, String defaultValue) {
         String value = System.getProperty(key);
-        if (value == null) {
-            value = config.getProperty(key, null);
-        }
+
         if(value == null){
             value = System.getenv(key);
         }
+
+        if (value == null) {
+            value = config.getProperty(key, null);
+        }
+
         if (value == null || value.isEmpty()){
             value = defaultValue;
         }
