@@ -3,14 +3,14 @@
 	<parent>
 		<groupId>com.cnscud.xpower</groupId>
 		<artifactId>xpower-parent</artifactId>
-		<version>1.0.3-SNAPSHOT</version>
+		<version>1.0.3</version>
 	</parent>
 	<artifactId>xpower-mq</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>com.cnscud.xpower</groupId>
 			<artifactId>xpower-main</artifactId>
-			<version>1.0.3-SNAPSHOT</version>
+			<version>1.0.3</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
